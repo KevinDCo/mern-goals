@@ -15,6 +15,7 @@ app.use(express.urlencoded({extended: false}))
 
 // use our routes so we don't bloat up this code
 app.use('/api/goals', require('./routes/goalRoutes'))
+app.use('/api/users', require('./routes/userRoutes'))
 
 //use our middleware errorHandler instead of default
 app.use(errorHandler)
